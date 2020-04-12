@@ -1,0 +1,147 @@
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand img-responsive" href="#">
+    <div class="logo-font">□Tsujido_Base</div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+      <li><a class="nav-link" href="#">WORKS</a></li>
+      <li><a class="nav-link" href="#">BLOG</a></li>
+      <li><a class="nav-link" href="#">CONTACT</a></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--top_image-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1">
+      <div class="d-flex flex-column sidebar_position">
+        <%= image_tag 'mailicon.png', class:'img-fluid side-icon', :size =>'40x60'%>
+        <%= image_tag 'github.png', class:'img-fluid side-icon', :size =>'40x60'%>
+      </div>
+    </div>
+    <div class="col-11 card border-white">
+        <%= image_tag 'top_image.png', class:'img-fluid', :size =>'2040x1280'%>
+        <div class="card-img-overlay">
+          <div class="text-white logo-font">Portfolio</div>
+          <button type="button" class="btn btn-outline-info btn-lg">Who's ME?
+          </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--ABOUT-->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col text-center">
+      <h6>About</h6>
+      <div class="subheading">
+        自己紹介
+      </div>
+    </div>
+</div>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-lg-5 text-center">
+      <%=image_tag 'myphoto.png', size: "300x250", class:'img-fluid ml-4'%>
+    </div>
+    <div class="col-lg-6 list_size">
+      <ul class="lead mt-5">
+        <li>名前：Toshiki Shimosawa</li>
+        <li>出身：長野県（神奈川県在住）</li>
+        <li>学歴：明治大学農学部</li>
+        <li>活動：大学時代に農業へのIT活用について研究し、情報技術に興味が生まれ、大手通信キャリアにてSEを経験</li>
+        <li>その他：最近は仕事や私生活の効率化を図るアプリの開発が趣味です</li>
+      </ul>
+    </div>
+</div>
+
+
+<!--Carrier-->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col text-center">
+      <h6>Carrier</h6>
+      <div class="subheading">
+        経歴
+      </div>
+    </div>
+</div>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-lg-5">
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+</div>
+
+<!--Portfolio-->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col text-center">
+      <h6>Portfolio</h6>
+      <div class="subheading">
+        ポートフォリオ
+      </div>
+    </div>
+</div>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-lg-5">
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+</div>
+
+<!--Contact-->
+
+<!--Drawer-->
+<body class="drawer drawer--right">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#">Brand</a></li>
+        <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+        <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+</body>
+
+<script>
+ $(document).ready(function() {
+   $('.drawer').drawer();
+ });
+</script>
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
