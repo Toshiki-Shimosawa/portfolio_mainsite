@@ -1,56 +1,69 @@
 <!--navbar-->
 <nav class="navbar navbar-expand-lg navbar-light ">
   <a class="navbar-brand img-responsive" href="#">
-    <div class="logo-font">□Tsujido_Base</div>
+    <div class="logo-font">Toshiki ’s Portfolio</div>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+ 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-      <li><a class="nav-link" href="#">WORKS</a></li>
-      <li><a class="nav-link" href="#">BLOG</a></li>
-      <li><a class="nav-link" href="#">CONTACT</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+      <li><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+      <li><a class="nav-link" href="#contact">CONTACT</a></li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
+<!--navbar_button-->
+<button type="button" class="drawer-toggle drawer-hamburger d-lg-none">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"></span>
+</button>
+<nav class="drawer-nav" role="navigation">
+  <ul class="drawer-menu">
+    <li><a class="drawer-brand logo-font" href="#">Toshiki ’s Portfolio</a></li>
+      <li class="drawer-menu-item"><a class="nav-link" href="#about">ABOUT</a></li>
+      <li class="drawer-menu-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+      <li class="drawer-menu-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+      <li class="drawer-menu-item"><a class="nav-link" href="mailto:toshiki.shimosawa@gmail.com">MAIL</a></li>
+      <li class="drawer-menu-item"><a class="nav-link" href="https://github.com/Toshiki-Shimosawa">Github</a></li>
+  </ul>
+</nav>
+
+
 <!--top_image-->
 <div class="container-fluid">
   <div class="row">
     <div class="col-1">
       <div class="d-flex flex-column sidebar_position">
-        <%= image_tag 'mailicon.png', class:'img-fluid side-icon', :size =>'40x60'%>
-        <%= image_tag 'github.png', class:'img-fluid side-icon', :size =>'40x60'%>
+        <div class="side-icons">
+            <%= link_to image_tag("mailicon.png",class:'img-fluid side-icon mb-4', :size =>'40x40',alt: "mail"), "mailto:toshiki.shimosawa@gmail.com"%>
+            <%= link_to image_tag("github.png",class:'img-fluid side-icon mb-4', :size =>'40x40',alt: "Github"), "https://github.com/Toshiki-Shimosawa"%>
+        </div>
       </div>
     </div>
     <div class="col-11 card border-white">
         <%= image_tag 'top_image.png', class:'img-fluid', :size =>'2040x1280'%>
         <div class="card-img-overlay">
-          <div class="text-white logo-font">Portfolio</div>
-          <button type="button" class="btn btn-outline-info btn-lg">Who's ME?
-          </button>
+          <div class="text-white image-font">Portfolio</div>
+          <a class="btn btn-outline-light btn-md" href="#about" role="button">Who's ME?</a>
         </div>
     </div>
   </div>
 </div>
 
 <!--ABOUT-->
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5" >
   <div class="row">
-    <div class="col-1"></div>
+    <div class="col-1">
+    </div>
     <div class="col text-center">
-      <h6>About</h6>
+      <h6 id="about" class="anchor">About</h6>
       <div class="subheading">
         自己紹介
       </div>
     </div>
 </div>
+</div>
+
 <div class="container-fluid mt-5">
   <div class="row">
     <div class="col-1">
@@ -59,47 +72,159 @@
       <%=image_tag 'myphoto.png', size: "300x250", class:'img-fluid ml-4'%>
     </div>
     <div class="col-lg-6 list_size">
-      <ul class="lead mt-5">
-        <li>名前：Toshiki Shimosawa</li>
-        <li>出身：長野県（神奈川県在住）</li>
-        <li>学歴：明治大学農学部</li>
-        <li>活動：大学時代に農業へのIT活用について研究し、情報技術に興味が生まれ、大手通信キャリアにてSEを経験</li>
-        <li>その他：最近は仕事や私生活の効率化を図るアプリの開発が趣味です</li>
-      </ul>
+        <ul class="lead mt-5">
+          <li>名前：Toshiki</li>
+          <li>出身：長野県（神奈川県在住）</li>
+          <li>現職：大手キャリア インフラエンジニア(ネットワーク、モバイル、セキュリティが主)</li>
+          <li>活動：大学時代に農業へのIT活用について研究し、情報技術に興味が生まれ、大手通信キャリアにてSEを経験</li>
+          <li>その他：最近は仕事や私生活の効率化のためのアプリの開発が趣味です</li>
+        </ul>
     </div>
+  </div>
 </div>
 
 
 <!--Carrier-->
 <div class="container-fluid mt-5">
   <div class="row">
-    <div class="col-1"></div>
+    <div class="col-1">
+    </div>
     <div class="col text-center">
-      <h6>Carrier</h6>
+      <h6 id="cariier" class="anchor">Carrier</h6>
       <div class="subheading">
         経歴
       </div>
     </div>
+  </div>
 </div>
 <div class="container-fluid mt-5">
   <div class="row">
     <div class="col-1">
     </div>
+    <div class="lead col-lg-5">
+        <ul>
+          <li>2016年　明治大学　卒業</li>
+          <li>2016年　大手通信キャリア　就職</li>
+          <p><br>通信キャリアの枠にとらわれず、様々な最新技術に接することのできる環境に魅力を感じSE本部を希望し、配属されました。<br>主に金融担当として、ネットワークインフラ、セキュリティ構築に加え、PMとしてシステム開発などを経験、また、直近一年半では地方銀行向けのバンキングアプリケーションのプレセールス、開発プロジェクトを経験<br><p>
+          <li>2020年5月　転職活動開始</li>
+          <p><br>現職でのバンキングアプリケーション開発プロジェクトの経験から、アプリケーションのレイヤーの開発においては、ユーザーの求める機能やUI/UXを自らの技術力によって作り上げ、目に見え、体験できる形で作り上げることに魅力を感じました。<br>転職後においては、こうした、プレセールスやPMとしてのSE経験から、ユーザー目線と技術力の双方を重視し、求められるサービスの実現のために引き続き継続的に自己研鑽を重ねてい
+          くことを大切にしていきたいと考えています。</p>
+        </ul>
+    </div>
+    <div class="col-lg-1">
+    </div>
     <div class="col-lg-5">
-    </div>
-    <div class="col-lg-6">
-
-    </div>
+       <div class="list-group mt-4" style="max-width: 600px;">
+          <button type="button" class="list-group-item active btn-info">取得資格</button>
+          <button type="button" class="list-group-item disabled">CCNA・CCNP Router(現在は失効)</button>
+          <button type="button" class="list-group-item disabled">AWS 認定ソリューションアーキテクト – アソシエイト</button>
+          <button type="button" class="list-group-item disabled">応用情報技術者</button>
+    　　</div>
+      　<div class="list-group mt-1" style="max-width: 600px;">
+          <button type="button" class="list-group-item active btn-info">プログラミング・アプリ開発関連スキル</button>
+          <button type="button" class="list-group-item disabled">HTML / CSS</button>
+          <button type="button" class="list-group-item disabled">JavaScript / jQuery / Vue.js</button>
+          <button type="button" class="list-group-item disabled">Ruby / Ruby on Rails</button>
+          <button type="button" class="list-group-item disabled">AWS</button>
+  　　　 </div>
+  </div>
 </div>
 
+<!--Portfolio area-->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col text-center">
+      <h6 id="portfolio" class="anchor" >Portfolio</h6>
+      <div class="subheading mb-5">
+        ポートフォリオ
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Portfolio-->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-1">
+    </div>
+      <div class="col-lg-11">
+<!--Portfolioコンテンツ-->
+<div class="box bx-bg-color">
+  <div class="text-p">
+    <h3 class = "mb-3 bg-secondary text-light">CiscoコンフィグSnippetアプリ　 -Cisnipp-</h3>
+    <h5>アプリ概要</h5>
+     <ul>
+        <li>ネットワーク設定コンフィグ検索サイト</li>
+        <li>ネットワーク機器グローバルシェアNo1のCiscoの設定を素早く検索&コピペ可能</li>
+        <li>使用技術：HTML / CSS / Ruby on Rails / Vue.js / AWS EC2</li>
+      </ul>
+    <h5>こだわりポイント</h5>
+     <ul>
+        <li>テキスト入力による全文検索機能による利便性</li>
+        <li>Vue.jsを利用したAPI通信（Axios)の利用</li>
+        <li>実際に社内業務で利用中。本番環境には社内での利用に閉じるため、AWSのセキュリティグループにて送信元IPアドレス制限を実装</li>
+      </ul>
+  </div>
+  <div class="pict"><%= link_to image_tag("pf1.png"), "http://54.238.119.194/index.html" %></div>
+</div>
+
+
+<div class="box bx-bg-color">
+  <div class="text-p">
+    <h3 class = "mb-3 bg-secondary text-light" >写真共有アプリ　-PHOTO STOCK-</h3>
+       <h5>アプリ概要</h5>
+     <ul>
+        <li>インスタグラム風写真共有アプリケーション</li>
+        <li>イメージ画像のアップロードだけでなく、ユーザ管理、コメント、いいね！といった機能も使用可能</li>
+        <li>使用技術：HTML / CSS / Ruby on Rails / Docker</li>
+        
+      </ul>
+    <h5>こだわりポイント</h5>
+     <ul>
+        <li>ユーザ作成機能、コンテンツ投稿、削除機能など、SNS開発に必要な要素をRailsを用いて開発</li>
+        <li>コメントやいいね！機能など、ユーザー体験を高めるオプション機能も実装</li>
+        <li>Docker上で開発することによりデプロイ時の環境差による影響を最小化</li>
+      </ul>
+  </div>
+  <div class="pict"><%= link_to image_tag("pf2.png"), "https://intense-atoll-81173.herokuapp.com/users/sign_in" %></div>
+  
+</div>
+<div class="box bx-bg-color">
+  <div class="text-p ">
+    <h3 class = "mb-3 bg-secondary text-light" >webスクレイピングアプリ</h3>
+    <p>順次デプロイ予定となります</p>
+  </div>
+  <div class="pict"><%= image_tag("pending.jpeg") %></div>
+</div>
+
+<div class="box bx-bg-color">
+  <div class="text-p">
+    <h3 class = "mb-3 bg-secondary text-light" >バー予約ホームページ</h3>
+    <p>順次デプロイ予定となります</p>
+  </div>
+  <div class="pict"><%= image_tag("pending.jpeg") %></div>
+</div>
+
+
+
+<!--Portfolioコンテンツここまで-->
+
+</div>
+</div>
+</div>
+
+
+<!--Portfolioここまで-->
+<!--Contact-->
 <div class="container-fluid mt-5">
   <div class="row">
     <div class="col-1"></div>
     <div class="col text-center">
-      <h6>Portfolio</h6>
+      <h6 id="contact" class="anchor">Contact</h6>
       <div class="subheading">
-        ポートフォリオ
+        ご連絡
       </div>
     </div>
 </div>
@@ -107,39 +232,21 @@
   <div class="row">
     <div class="col-1">
     </div>
-    <div class="col-lg-5">
-    </div>
-    <div class="col-lg-6">
-
+    <div class="col-lg-11">
+      <a class="btn btn-outline-info btn-lg btn-block" href="mailto:bremen-oz.motosumi@shimo-t.club" role="button">Please feel free to contact </a>
     </div>
 </div>
+</div>
+</div>
 
-<!--Contact-->
 
-<!--Drawer-->
-<body class="drawer drawer--right">
-  <header role="banner">
-    <button type="button" class="drawer-toggle drawer-hamburger">
-      <span class="sr-only">toggle navigation</span>
-      <span class="drawer-hamburger-icon"></span>
-    </button>
-    <nav class="drawer-nav" role="navigation">
-      <ul class="drawer-menu">
-        <li><a class="drawer-brand" href="#">Brand</a></li>
-        <li><a class="drawer-menu-item" href="#">Nav1</a></li>
-        <li><a class="drawer-menu-item" href="#">Nav2</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main role="main">
-    <!-- Page content -->
-  </main>
-</body>
 
 <script>
  $(document).ready(function() {
    $('.drawer').drawer();
  });
+
+ $('[data-toggle="tooltip"]').tooltip();
 </script>
 
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
