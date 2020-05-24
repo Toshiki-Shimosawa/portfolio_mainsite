@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* line 1, /app/app/assets/stylesheets/custom/mycustom.scss */
+.logo-font {
+  font-size: 30px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.0rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  font-family: Comic Sans MS;
+  line-height: 1.3;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* line 10, /app/app/assets/stylesheets/custom/mycustom.scss */
+.subheading {
+  font-size: 40px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+/* line 16, /app/app/assets/stylesheets/custom/mycustom.scss */
+.img-fluid {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+/* 文字を中央に揃える */
+/* line 21, /app/app/assets/stylesheets/custom/mycustom.scss */
+.card-img-overlay {
+  padding: 0;
+  top: calc(50% - 0.5rem);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 29, /app/app/assets/stylesheets/custom/mycustom.scss */
+body {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(153, 153, 153, 0.33) 3%, transparent 23%), radial-gradient(rgba(153, 153, 153, 0.33) 3%, transparent 23%);
+  background-position: 0 0, 4px 4px;
+  background-size: 8px 8px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+
+/* line 41, /app/app/assets/stylesheets/custom/mycustom.scss */
+.sidebar_position {
+  position: fixed;
+  margin-top: 15%;
+  margin-left: 2.5%;
+}
+
+/* line 46, /app/app/assets/stylesheets/custom/mycustom.scss */
+.side-icon {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 50, /app/app/assets/stylesheets/custom/mycustom.scss */
+h1 {
+  font-size: 40px;
+}
+
+/* line 54, /app/app/assets/stylesheets/custom/mycustom.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 58, /app/app/assets/stylesheets/custom/mycustom.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 63, /app/app/assets/stylesheets/custom/mycustom.scss */
+.image-font {
+  font-size: 30px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.9rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  font-family: Comic Sans MS;
+  line-height: 1.3;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* line 73, /app/app/assets/stylesheets/custom/mycustom.scss */
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  height: auto;
+}
+
+/* line 81, /app/app/assets/stylesheets/custom/mycustom.scss */
+.text-p {
+  width: 70%;
+  padding: 30px;
+  text-align: left;
+}
+
+/* line 88, /app/app/assets/stylesheets/custom/mycustom.scss */
+h3 {
+  font-size: 21px;
+  margin: 0;
+}
+
+/* line 93, /app/app/assets/stylesheets/custom/mycustom.scss */
+.pict {
+  width: 30%;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+/* line 100, /app/app/assets/stylesheets/custom/mycustom.scss */
+.pict img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 105, /app/app/assets/stylesheets/custom/mycustom.scss */
+.box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* line 108, /app/app/assets/stylesheets/custom/mycustom.scss */
+.box:nth-child(even) .app-title {
+  text-align: center;
+}
+
+/* line 111, /app/app/assets/stylesheets/custom/mycustom.scss */
+.box:nth-child(even) .pict {
+  margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+  /* line 116, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* line 120, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .box:nth-child(even) {
+    flex-direction: column;
+  }
+
+  /* line 123, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .text-p {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 127, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .box:nth-child(even) .text-p {
+    text-align: center;
+  }
+
+  /* line 130, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .pict {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* line 136, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .box:nth-child(even) .pict {
+    margin-left: 0;
+    margin-right: 0%;
+  }
+
+  /* line 140, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .pict img {
+    width: 50%;
+    height: auto;
+  }
+
+  /* line 144, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .text-p ul {
+    list-style: none;
+  }
+}
+/* line 149, /app/app/assets/stylesheets/custom/mycustom.scss */
+.bx-bg-color {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* line 155, /app/app/assets/stylesheets/custom/mycustom.scss */
+#footer-wrap {
+  width: 100%;
+}
+
+/* line 159, /app/app/assets/stylesheets/custom/mycustom.scss */
+#footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  margin-top: 300px;
+  width: 100%;
+}
+
+/* line 168, /app/app/assets/stylesheets/custom/mycustom.scss */
+h6.anchor {
+  display: block;
+  padding-top: 380px;
+  margin-top: -380px;
+}
+
+/* line 175, /app/app/assets/stylesheets/custom/mycustom.scss */
+.side-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  /* line 181, /app/app/assets/stylesheets/custom/mycustom.scss */
+  .side-icons {
+    display: none;
+  }
+}
